@@ -30,7 +30,7 @@ public class MadLibGame {
 		
 		System.out.println("3.graduated on ");
 		int userInputDecember=sc.nextInt();
-		if(roses==userInputRoses)
+		if(roses.equals(userInputRoses))
 		{
 			System.out.println(roses+" correct");
 			TotalMarks+=1;
@@ -41,7 +41,7 @@ public class MadLibGame {
 	
 			
 		}
-		if(school==userInputSchool)
+		if(school.equals(userInputSchool))
 		{
 			System.out.println(school+" correct");
 			TotalMarks+=1;
