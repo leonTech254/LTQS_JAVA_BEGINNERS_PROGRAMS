@@ -7,7 +7,7 @@ public class Client {
 		// TODO Auto-generated method stub
 		try
 		{
-			Socket socket=new Socket("localhost",8000);
+			Socket socket=new Socket("localhost",9090);
 			System.out.println("Connected to the server");
 //			getting the output and input stream
 			InputStream input= socket.getInputStream();
