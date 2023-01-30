@@ -2,6 +2,7 @@ package leonteqsecurity;
 import java.util.Scanner;
 
 public class GuessingGame {
+	public static int attempts=0;
 	
 	public static int Random()
 	{
@@ -23,11 +24,16 @@ public class GuessingGame {
 		if (Generated==UserInput)
 		{
 			System.out.println("Correct! you won the Gessing game challange");
+			attempts+=1;
+			System.out.println("in " + attempts+ " attempts");
 			
 		}
 		else
 		{
 			System.out.println("Guess Failed the correct number is "+ Generated);
+			attempts+=1;
+			System.out.println("Number of attempts " + attempts);
+			
 			System.out.println("DO YOU WANT TO PLAY AGAIN? (1=Yes,0=No)");
 			int UserResponse=sc.nextInt();
 			if (UserResponse==1)
