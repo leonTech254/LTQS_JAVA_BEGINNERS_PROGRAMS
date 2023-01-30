@@ -6,10 +6,19 @@ public class MadLibGame {
 	public static int december=31;
 	public static int TotalMarks=0;
 	
+	public static String CorrectBlock()
+	{
+		System.out.println("CORRECT BLOCK");
+		String paragraph="It is true that Roses are _"+roses +"_ while the sky is blue."
+				+ "\nLeon went to _"+school+"_ to learn and granduated on _"+december+"_ December which is the last day of "
+				+ "december";
+		return paragraph;
+	}
+	
 	public static void Game()
 	{
 		System.out.println("ANSWER THE FOLLOWING QUESTION");
-		System.out.println("It is true that Roses are _____1_____ while sky is blue."
+		System.out.println("It is true that Roses are _____1_____ while the sky is blue."
 				+ "\nLeon went to ______2______ to learn and granduated on _______3______ December which is the last day of "
 				+ "december");
 		Scanner sc=new Scanner(System.in);
@@ -29,7 +38,7 @@ public class MadLibGame {
 		}else
 		{
 			System.out.println(userInputRoses+"-Incorrectcorrect");
-			System.out.println(roses+"-Incorrectcorrect");
+	
 			
 		}
 		if(school==userInputSchool)
@@ -52,7 +61,9 @@ public class MadLibGame {
 		{
 			System.out.println(userInputDecember+"-Incorrectcorrect");
 		}
-		System.out.println("TOTAL MARKS "+ TotalMarks);
+		System.out.println("TOTAL MARKS "+ TotalMarks+"\n\n");
+		System.out.println(CorrectBlock());
+		
 		
 		
 		
