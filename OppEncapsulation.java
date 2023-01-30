@@ -30,8 +30,6 @@ public class OppEncapsulation {
 		int myage=oppEnca.getAge();
 		System.out.println(myage);
 		
-		
-
 	}
 
 }
